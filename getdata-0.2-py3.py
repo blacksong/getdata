@@ -192,7 +192,8 @@ class DragCanvas:
         self.showMark=True
         self.pen = wx.Pen("green", 2)
         self.window.SetCursor(wx.Cursor(wx.CURSOR_ARROW))
-        self.bg_img=SourceImages.bgc.GetImage()
+        # self.bg_img=SourceImages.bgc.GetImage()
+        self.bg_img = wx.Image('haiqinyan_wlop.jpg')
         self.bgSize=0,0
         self.bg_bmp = self.bg_img.ConvertToBitmap()
         self.window.SetBackgroundStyle(wx.BG_STYLE_ERASE)
