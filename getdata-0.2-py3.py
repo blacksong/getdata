@@ -54,7 +54,7 @@ class MainFrame(wx.Frame):
         """
         Create and show the Save FileDialog
         """
-        dlg = wx.FileDialog(self,message="select the Save file style",defaultFile="",wildcard="*.txt;*.csv",style=wx.SAVE)
+        dlg = wx.FileDialog(self,message="select the Save file style",defaultFile="",wildcard="*.txt;*.csv",style=wx.FD_SAVE)
         if dlg.ShowModal() == wx.ID_OK:
             filename=""
             paths = dlg.GetPaths()
